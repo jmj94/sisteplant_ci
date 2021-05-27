@@ -1,7 +1,7 @@
 on: push # Disparador
 name: Ejecutar tests cuando se hace un PUSH
 jobs:
-  tests:
+  Tests_de_Sisteplant:
     runs-on: ubuntu-latest # Máquina virtual
     steps: # Pasos
       - name: Clonar y checkout de la rama actual
