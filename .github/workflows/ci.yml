@@ -1,0 +1,12 @@
+on: push # Disparador
+name: Ejecutar tests cuando se hace un PUSH
+jobs:
+  tests:
+  runs-on: ubuntu-latest # Máquina virtual
+  steps: # Pasos
+    - name: Clonar y checkout de la rama actual
+      uses: actions/checkout@v1
+    - name: Instalar dependencias
+      run: npm  install
+    - name: Ejecutando tests
+      run: npm test
